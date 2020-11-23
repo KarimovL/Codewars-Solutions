@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5a91a7c5fd8c061367000002
+Solution
+unction minimumSteps(N, k){
+  N.sort((a,b)=> a - b);
+  let sum = 0;
+
+  for (let i = 0; i < N.length;i++){
+    sum +=N[i];
+    if (sum >=k){
+      return i;
+    }
+  }
+  
+}
